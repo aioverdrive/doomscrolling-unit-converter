@@ -27,6 +27,7 @@ input::placeholder{
 .error-text {
     visibility: hidden;
     margin: 0;
+    text-decoration: underline;
 }
 /* bottom two selectors remove default number buttons */
 input[type='number'] {

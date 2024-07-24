@@ -17,7 +17,11 @@ convertBtn.addEventListener("click", function(){
     const inputtedMinutes = inputEl.valueAsNumber;
     if (inputtedMinutes){
         errorMessage.style.visibility = "hidden";
+        convertBtn.innerHTML = "Success!";
         displayCalculations(inputtedMinutes);
+        setTimeout(() => {
+            convertBtn.innerHTML = "Convert";
+        }, 2000);
     }
     else {
         errorMessage.style.visibility = "visible";
