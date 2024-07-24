@@ -1,3 +1,5 @@
+# Quick Note
+I DID NOT MAKE REAL VALUES I JUST PULLED EM OUT MY BEHIND LOL
 # Getting Started
 Install the dependencies and run the project
 ```
