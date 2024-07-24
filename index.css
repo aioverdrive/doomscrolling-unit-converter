@@ -1,0 +1,120 @@
+body {
+    margin: 0;
+    color: #EDE9FE;
+    background-color: #F9FAFB;
+    font-family: "Nanum Gothic Coding", sans-serif;
+
+}
+header {
+    background-color: #6D28D9;
+    padding: 30px 20px;
+    text-align: center;
+}
+input {
+    background-color: transparent;
+    border: #F3F4F6 solid 1px;
+    font-size: 140px;
+    padding: 10px 0;
+    max-width: 30vw;
+    text-align: center;
+    overflow: auto;
+    color: #EDE9FE;
+}
+input::placeholder{
+    color: #EDE9FE;
+    opacity: 0.5;
+}
+.error-text {
+    visibility: hidden;
+    margin: 0;
+}
+/* bottom two selectors remove default number buttons */
+input[type='number'] {
+    -moz-appearance:textfield;
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+}
+button {
+    display: block;
+    margin: 25px auto 15px auto;
+    border-radius: 5px;
+    width: 30vw;
+    padding: 12px 0;
+    border: none;
+    /* repeating is necessary to override browser user agents */
+    font-family: "Nanum Gothic Coding", sans-serif;
+}
+main {
+    color: #1F2937;
+}
+/* cool accordion styling */
+.faq-accordion {
+    margin: 60px auto;
+    padding: 1px;
+    width: 90vw;
+    overflow: hidden;
+}
+.faq-accordion li {
+    width: 95%;
+    list-style: none;
+    border-radius: 7px;
+    padding: 10px 12px;
+    margin: 25px 0;
+    background-color: #F3F4F6;
+}
+.faq-accordion li label {
+    display: flex;
+    align-items: center;
+    font-size: 1.25rem;
+    padding: 6px 10px;
+    font-weight: 700;
+    cursor: pointer;
+}
+label::before {
+    content: "+";
+    font-size: 1.5 rem;
+    margin-right: 15px;
+}
+input[type="radio"] {
+    display: none;
+}
+.faq-accordion .accordion-content {
+    padding: 0 10px;
+    line-height: 20px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 500ms, padding 500ms;
+    font-size: 1.125rem;
+}
+.faq-accordion input[type="radio"]:checked + label + .accordion-content{
+    max-height: fit-content;
+    padding: 10px 10px 20px;
+}
+.faq-accordion input[type="radio"]:checked + label::before{
+    content: "-";
+}
+/* calculations display area */
+.calculations-display-section {
+    background-color: #C4B5FD; 
+}
+.calculations-display {
+    padding: 1px;
+    width: 90vw;
+    margin: 0 auto;
+    text-align: center;
+}
+.calculations-display li {
+    background-color: #F3F4F6;
+    list-style: none;
+    margin: 50px auto;
+    padding: 15px 10px;
+}
+.calculations-display li p {
+    font-size: 1.375rem;
+}
+/* footer */
+footer {
+    text-align: center;
+}
